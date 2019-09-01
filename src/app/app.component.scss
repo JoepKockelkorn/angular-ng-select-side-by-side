@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+.my-selects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  ng-select {
+    min-width: 200px;
+  }
+}

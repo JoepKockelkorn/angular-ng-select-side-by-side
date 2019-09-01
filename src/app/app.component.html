@@ -1,0 +1,17 @@
+<ng-container *ngIf="form">
+  <div [formGroup]="form" class="my-selects">
+    <ng-select
+      formControlName="first"
+      [items]="items"
+      bindValue="value">
+    </ng-select>
+
+    <ng-select
+      formControlName="second"
+      [items]="items"
+      bindValue="value">
+    </ng-select>
+  </div>
+
+  <pre>{{ form.value | json }}</pre>
+</ng-container>
